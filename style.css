@@ -45,10 +45,14 @@ body {
 .payment-info {
   background-color: hsl(248, 32%, 49%);
   color: white;
-  padding: 15px 40px;
+  padding: 15px 50px;
   border-radius: 10px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.payment-info span {
+  color: hsl(258, 36%, 91%);
 }
 
 form {
@@ -133,6 +137,9 @@ form {
   .signin-container p {
     width: 100%;
     margin-bottom: 10px;
+  }
+  .payment-info {
+    padding: 15px 45px;
   }
   .form-input-label {
     font-size: 0.9rem;
