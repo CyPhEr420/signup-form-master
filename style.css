@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("./images/bg-intro-desktop.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.signin-container {
+  display: flex;
+  width: 1100px;
+  align-items: center;
+}
+
+.signin-content {
+  color: #fff;
+}
+
+.signin-content h1 {
+  font-size: 2.5rem;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.signin-content p {
+  font-size: 1rem;
+  width: 80%;
+  line-height: 25px;
+}
+
+.signin-form {
+  width: 100%;
+}
+
+.payment-info {
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  padding: 15px 40px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-group {
+  position: relative;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.form-input-label {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  pointer-events: none;
+  color: grey;
+  transition: 300ms ease all;
+}
+
+.form-input {
+  background-color: #fff;
+  padding: 15px;
+  display: block;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.form-input:focus {
+  outline: none;
+}
+
+.form-input:focus + .form-input-label {
+  top: -7px;
+  font-size: 12px;
+}
+
+.btn {
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  padding: 15px;
+  width: 80%;
+  border: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  letter-spacing: 1.4px;
+  cursor: pointer;
+}
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+.terms {
+  font-size: 10px;
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+  letter-spacing: 0.5px;
+}
+
+.terms a {
+  color: red;
+  text-decoration: none;
+}
+
+@media (max-width: 400px) {
+  .signin-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .signin-content {
+    text-align: center;
+  }
+
+  .signin-container h1 {
+    width: 100%;
+    font-size: 2.3rem;
+  }
+  .signin-container p {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
